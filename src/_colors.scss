@@ -1,0 +1,5 @@
+$mainGreenColor: #71EBA8; 
+
+@mixin border($px, $type, $color) { 
+     border: $px $type $color; 
+}
