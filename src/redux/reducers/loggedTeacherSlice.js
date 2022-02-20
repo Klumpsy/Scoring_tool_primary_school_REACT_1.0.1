@@ -1,7 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const initialState = { 
-    loggedTeacher: "None"
+    loggedTeacher: "None",
+    logged: false
 }
 
 const loggedTeacherSlice = createSlice({ 
@@ -9,10 +10,12 @@ const loggedTeacherSlice = createSlice({
     initialState, 
     recuders: { 
         logTeacher(state, action) { 
-            state.loggedTeacher = action.payload.teacherName
+            state.loggedTeacher = action.payload.username
+            state.logged = true; 
         },
         logoutTeacher(state) { 
             state.loggedTeacher = "None"
+            state.logged = false
         }
     }
 })
@@ -20,5 +23,5 @@ const loggedTeacherSlice = createSlice({
 export const {logTeacher, logoutTeacher} = loggedTeacherSlice.actions;
 export default loggedTeacherSlice.reducer; 
 
-export const loggedTeacher = state => state.loggedTeacher; 
+export const loggedTeacher = state => state.loggedTeacherSlice
 
