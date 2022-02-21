@@ -16,4 +16,6 @@ const studentSlice = createSlice({
 
 export const {saveStudentList} = studentSlice.actions;
 
+export const checkStudents = state => state.students.students; 
+
 export default studentSlice.reducer; 

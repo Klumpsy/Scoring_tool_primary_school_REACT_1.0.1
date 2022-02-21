@@ -9,7 +9,6 @@ import { database } from '../../firebaseFunctions/firebase';
 //Redux 
 import { useDispatch, useSelector } from "react-redux";
 import { saveStudentList } from "../../redux/reducers/studentsSlice";
-import getStudentList from "../../redux/reducers/studentsSlice";
 
 function Studentlist() {
     const dispatch = useDispatch();
