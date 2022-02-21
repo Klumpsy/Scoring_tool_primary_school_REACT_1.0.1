@@ -1,6 +1,12 @@
 $mainGreenColor: #71EBA8; 
 $mainGreenHoverColor: #9fe9c0; 
 
+$mainGrayBoxColor: rgb(238, 235, 235); 
+
+$mainStudentColor: rgb(159, 194, 159); 
+$mainStudentGroupColor: rgb(233, 231, 111); 
+
 @mixin border($px, $type, $color) { 
      border: $px $type $color; 
 }
+

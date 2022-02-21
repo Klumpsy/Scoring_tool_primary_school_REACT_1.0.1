@@ -1,6 +1,8 @@
 import './App.css';
+
 import Login from './pages/LoginPage/LoginPage';
 import MainDashboard from "./pages/MainDashboard/MainDashboard"
+import Navbar from './pages/Navbar/Navbar';
 
 //Redux
 import {useSelector } from "react-redux";
@@ -10,10 +12,13 @@ function App() {
   const teacher = useSelector(loggedTeacher); 
 
   return (
-    <div className="App">
+    <div className="app">
         {
-          teacher.logged ?
-          <MainDashboard/>
+          teacher ?
+          <>
+           <Navbar/>
+           <MainDashboard/>
+          </>
           :
           <Login/>
         }

@@ -1,0 +1,13 @@
+.logout-button {
+  background-color: red;
+  width: 100px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.logout-button:hover {
+  background-color: #ec9393;
+  cursor: pointer;
+}
+/*# sourceMappingURL=signoutButton.css.map */

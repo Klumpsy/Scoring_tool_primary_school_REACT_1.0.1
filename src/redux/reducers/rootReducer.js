@@ -2,10 +2,11 @@ import { combineReducers } from "@reduxjs/toolkit";
 
 //Slices 
 import loggedTeacherSlice from "./loggedTeacherSlice";
+import studentsSlice from "./studentsSlice";
 
 const rootReducer = combineReducers({
-    loggedTeacherSlice, 
-
+    user: loggedTeacherSlice, 
+    students: studentsSlice
 })
 
 export default rootReducer; 

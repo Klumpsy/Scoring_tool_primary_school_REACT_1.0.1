@@ -1,0 +1,12 @@
+@import "../../colors"; 
+
+.student-list-wrapper { 
+    width: 280px; 
+    max-height: 80vh; 
+    min-height: 1060px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: $mainGrayBoxColor;
+    overflow-y: auto;
+}

@@ -1,0 +1,11 @@
+.dashboard-main-wrapper { 
+    width: 100%; 
+    height: calc(100vh - 120px);
+    background-image: url("../../media/images/mainDashBottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    h1 { 
+        text-align: center;
+    }
+}

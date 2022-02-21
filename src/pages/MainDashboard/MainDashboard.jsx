@@ -1,17 +1,17 @@
 import React from 'react'
+import "./maindashboard.css";
 
-import { useSelector } from "react-redux";
-import { loggedTeacher } from "../../redux/reducers/loggedTeacherSlice";
-
-import { logout } from '../../firebaseFunctions/auth';
+//Components
+import "../../components/StudentList/Studentlist";
+import Studentlist from '../../components/StudentList/Studentlist';
 
 function MainDashboard() {
-    const teacher = useSelector(loggedTeacher);
+
     return (
-        <>
-            <div>Hello {teacher.loggedTeacher}</div>
-            <button onClick={logout}>LogOut</button>
-        </>
+        <div className="dashboard-main-wrapper">
+            <h1>Main Dashboard</h1>
+            <Studentlist />
+        </div>
 
     )
 }

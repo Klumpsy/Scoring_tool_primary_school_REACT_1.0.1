@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import "./loginPage.css";
 
 //Firebase Functions
-import { login } from '../../firebaseFunctions/auth';
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../firebaseFunctions/firebase";
 
 //Redux
 import { useDispatch } from "react-redux";
@@ -16,9 +17,16 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault()
-
     login(username, userPassword)
-    dispatch(logTeacher(username))
+  }
+
+  const login = async (email, password) => {
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      dispatch(logTeacher(username))
+    } catch (err) {
+      alert(`Sorry, je kunt niet inloggen.. Error: ${err.message}`)
+    }
   }
 
   return (
@@ -44,3 +52,6 @@ const Login = () => {
 }
 
 export default Login
+
+
+
