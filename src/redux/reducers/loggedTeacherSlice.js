@@ -6,7 +6,7 @@ const initialState = {
 }
 
 const loggedTeacherSlice = createSlice({ 
-    name: "loggedTeacher", 
+    name: "users", 
     initialState, 
     reducers: { 
         logTeacher(state, action) { 

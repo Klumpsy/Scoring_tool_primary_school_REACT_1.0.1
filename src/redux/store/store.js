@@ -1,8 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit"; 
-import rootReducer from "../reducers/rootReducer"; 
+import loggedTeacherSlice from "../reducers/loggedTeacherSlice"
+import studentsSlice from "../reducers/studentsSlice";
 
 const store = configureStore({ 
-    reducer: rootReducer
+    reducer: { 
+        user: loggedTeacherSlice, 
+        students: studentsSlice
+    }
 })
 
 export default store; 
+

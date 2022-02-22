@@ -1,0 +1,17 @@
+.filter {
+  padding: 6px 10px;
+  margin-top: 5px;
+  background-color: #eed080;
+  font-weight: 700;
+}
+
+.filter:hover {
+  background-color: #e7912f;
+  cursor: pointer;
+}
+
+.selected-filter {
+  background-color: #e7912f;
+  color: white;
+}
+/*# sourceMappingURL=filterItem.css.map */

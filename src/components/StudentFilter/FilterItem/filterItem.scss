@@ -1,0 +1,14 @@
+    .filter { 
+       padding: 6px 10px;
+       margin-top: 5px;
+       background-color: rgb(238, 208, 128); 
+       font-weight: 700;
+       &:hover { 
+            background-color: rgb(231, 145, 47);
+           cursor: pointer;
+       }
+    }
+    .selected-filter { 
+        background-color: rgb(231, 145, 47);
+        color: white; 
+    }

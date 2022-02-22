@@ -4,15 +4,21 @@ import "./studentlist.css";
 
 //Components
 import StudentButton from './StudentButton/StudentButton';
+import StudentFilter from '../StudentFilter/StudentFilter';
 //Firebase 
 import { database } from '../../firebaseFunctions/firebase';
 //Redux 
 import { useDispatch, useSelector } from "react-redux";
 import { saveStudentList } from "../../redux/reducers/studentsSlice";
+import selectedCategory from "../../redux/reducers/studentsSlice";
 
 function Studentlist() {
     const dispatch = useDispatch();
-    const studentList = useSelector((state) => state.students);
+    const studentList = useSelector((state) => state.students.students);
+    const filterCategory = useSelector((state) => state.students.selectedCategory)
+
+    console.log(filterCategory)
+
     const [students, setStudents] = useState([]);
 
     useEffect(() => {
@@ -30,8 +36,12 @@ function Studentlist() {
 
     return (
         <div className="student-list-wrapper">
+            <StudentFilter />
             {
-                students.map(student => (
+                students.filter(student => {
+                    if (filterCategory === "none") return true
+                    return filterCategory == student.studentGroup
+                }).map(student => (
                     <StudentButton
                         name={student.studentName}
                         group={student.studentGroup}
