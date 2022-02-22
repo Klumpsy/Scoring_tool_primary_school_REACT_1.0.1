@@ -10,14 +10,12 @@ import { database } from '../../firebaseFunctions/firebase';
 //Redux 
 import { useDispatch, useSelector } from "react-redux";
 import { saveStudentList } from "../../redux/reducers/studentsSlice";
-import selectedCategory from "../../redux/reducers/studentsSlice";
+import { selectedCategory } from "../../redux/reducers/studentsSlice";
 
 function Studentlist() {
     const dispatch = useDispatch();
+    const filterCategory = useSelector(selectedCategory);
     const studentList = useSelector((state) => state.students.students);
-    const filterCategory = useSelector((state) => state.students.selectedCategory)
-
-    console.log(filterCategory)
 
     const [students, setStudents] = useState([]);
 
