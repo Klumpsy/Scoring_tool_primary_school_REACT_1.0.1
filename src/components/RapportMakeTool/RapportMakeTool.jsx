@@ -15,13 +15,16 @@ function RapportMakeTool() {
     const activeStudent = useSelector(selectedStudent)
 
     return (
-        <div className="rapport-make-tool-wrapper">
-            <h2>{activeStudent?.studentName}</h2>
-            <PersonalMessages activeStudent={activeStudent} />
-            <DiaScores activeStudent={activeStudent} />
-            <SnappetScores activeStudent={activeStudent} />
-            <SnappetSliders activeStudent={activeStudent} />
+        <div className="rapport-info-wrapper">
+            <h2 className="rapport-name">{activeStudent?.studentName}</h2>
+            <div className="rapport-make-tool-wrapper">
+                <PersonalMessages activeStudent={activeStudent} />
+                <DiaScores activeStudent={activeStudent} />
+                <SnappetScores activeStudent={activeStudent} />
+                <SnappetSliders activeStudent={activeStudent} />
+            </div>
         </div>
+
     )
 }
 

@@ -17,4 +17,22 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/*# sourceMappingURL=snappetsliders.css.map */
+
+.slider-container-wrapper .slidercontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider-container-wrapper .slidercontainer span {
+  font-size: 12px;
+}
+
+.slider-container-wrapper .slidercontainer .range-display {
+  font-size: 16px;
+}
+/*# sourceMappingURL=snappetSliders.css.map */

@@ -1,9 +1,9 @@
 import { createSlice} from "@reduxjs/toolkit";
 
 const initialState = { 
-    snappetSliderRekenen: 50,
-    snappetSliderTaal: 50,
-    snappetSliderSpelling: 50,
+    snappetSliderRekenen: 0,
+    snappetSliderTaal: 0,
+    snappetSliderSpelling: 0,
 }
 
 const snappetSliderSlice = createSlice({ 

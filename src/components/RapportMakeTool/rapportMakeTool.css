@@ -1,4 +1,17 @@
-.rapport-make-tool-wrapper {
+.rapport-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rapport-info-wrapper .rapport-make-tool-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,10 +24,21 @@
           align-items: center;
   width: 100%;
   height: 100%;
-  max-height: 80vh;
+  max-height: 1008px;
   border: 2px solid black;
   border-radius: 10px;
-  margin: 5px;
+  margin-left: 5px;
   overflow-y: auto;
+}
+
+.rapport-info-wrapper .rapport-name {
+  text-align: center;
+  width: 60%;
+  background-color: #9fc29f;
+  padding-bottom: 20px;
+  border-radius: 10px 10px 0px 0px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 /*# sourceMappingURL=rapportMakeTool.css.map */
