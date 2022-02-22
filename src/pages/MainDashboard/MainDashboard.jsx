@@ -10,7 +10,6 @@ function MainDashboard() {
 
     return (
         <div className="dashboard-main-wrapper">
-            <h1>Main Dashboard</h1>
             <div className="rapport-main-info">
                 <Studentlist />
                 <RapportMakeTool />

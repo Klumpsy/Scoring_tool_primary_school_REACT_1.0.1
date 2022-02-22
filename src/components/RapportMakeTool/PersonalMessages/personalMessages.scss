@@ -1,0 +1,18 @@
+.personal-messages-wrapper { 
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    .personal-messages { 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        textarea { 
+            max-width: 450px;
+            min-width: 450px; 
+            min-height: 150px;
+            max-height: 150px; 
+            margin: 5px;
+        }
+    }
+}

@@ -8,11 +8,8 @@
   background-position: bottom;
 }
 
-.dashboard-main-wrapper h1 {
-  text-align: center;
-}
-
 .dashboard-main-wrapper .rapport-main-info {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

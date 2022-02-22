@@ -1,0 +1,24 @@
+.snappet-scores-wrapper { 
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    .snappet-scores { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input { 
+            padding: 8px;
+            width: 70px;
+        }
+        .snappet-scores-container { 
+            display: flex;
+            div { 
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+            }
+        }
+    }
+}
