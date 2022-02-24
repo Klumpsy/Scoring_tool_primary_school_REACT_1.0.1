@@ -12,13 +12,14 @@ import { database } from "../../firebaseFunctions/firebase";
 //Redux 
 import { useDispatch, useSelector } from "react-redux";
 import { fetchStudents, checkStudents } from "../../redux/reducers/studentsSlice";
-import { selectedCategory } from "../../redux/reducers/studentsSlice";
+import { selectedCategory, searchedStudent } from "../../redux/reducers/studentsSlice";
 
 const databaseRef = ref(database, "Rapporten");
 
 function Studentlist() {
     const dispatch = useDispatch();
     const filterCategory = useSelector(selectedCategory);
+    const searchInput = useSelector(searchedStudent);
     const studentList = useSelector(checkStudents);
 
     useEffect(() => {
@@ -33,8 +34,12 @@ function Studentlist() {
             <StudentFilter />
             {
                 studentList?.filter(student => {
-                    if (filterCategory === "none") return true
-                    return filterCategory == student.studentGroup
+                    if (searchInput !== "") {
+                        return student.studentName.toLowerCase().includes(searchInput.toLowerCase());
+                    } else {
+                        if (filterCategory === "none") return true
+                        return filterCategory == student.studentGroup
+                    }
                 }).map(student => (
                     <StudentButton
                         name={student.studentName}

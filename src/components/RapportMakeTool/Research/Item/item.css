@@ -1,0 +1,56 @@
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  width: 220px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title-container .add-button {
+  color: #89d689;
+  background-color: #696363;
+  border-radius: 50%;
+  border: 1px solid #89d689;
+}
+
+.title-container .add-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #b0ecb0;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.project-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-container .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.project-container .project input {
+  padding: 5px;
+  margin-left: 8px;
+  width: 300px;
+}
+
+.project-container .project .delete-item:hover {
+  color: red;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+/*# sourceMappingURL=item.css.map */

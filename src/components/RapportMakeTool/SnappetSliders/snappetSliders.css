@@ -26,13 +26,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.slider-container-wrapper .slidercontainer span {
-  font-size: 12px;
-}
-
-.slider-container-wrapper .slidercontainer .range-display {
-  font-size: 16px;
+  padding-right: 30px;
 }
 /*# sourceMappingURL=snappetSliders.css.map */

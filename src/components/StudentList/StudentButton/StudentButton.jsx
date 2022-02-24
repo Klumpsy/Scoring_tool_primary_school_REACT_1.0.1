@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import "./studentButton.css";
 
+//Components
+import DeleteStudentButton from './deleteStudentButton/DeleteStudentButton';
+
 //Redux
 import { useDispatch, useSelector } from "react-redux";
 import { selectStudent, selectedStudent } from "../../../redux/reducers/studentsSlice";
@@ -23,6 +26,7 @@ function StudentButton({ name, group, info }) {
             <span className="student-group">
                 {group}
             </span>
+            <DeleteStudentButton activeStudent={activeStudent?.studentName} />
         </div>
     )
 }

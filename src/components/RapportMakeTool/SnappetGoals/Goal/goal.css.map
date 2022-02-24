@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CAMtB;;AAVD,AAKI,KALC,CAKD,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,GAAG;CACd",
+    "sources": [
+        "goal.scss"
+    ],
+    "names": [],
+    "file": "goal.css"
+}

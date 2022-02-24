@@ -1,0 +1,31 @@
+
+.display-container { 
+    min-width: 200px;
+}
+span { 
+    font-size: 12px;
+    padding: 20px; 
+}
+.range-display { 
+    font-size: 12px;
+    min-width: 50px;
+}
+
+.slider { 
+    -webkit-appearance: none; 
+   outline: none;
+   height: 3px;
+   background-color: black;
+   &::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 15px; 
+    height: 15px; 
+    background: #f5ad39; 
+    border-radius: 50%;
+    cursor: pointer; 
+        &:active { 
+        background: rgb(108, 169, 197);
+        }
+    }
+}

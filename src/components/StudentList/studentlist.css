@@ -5,9 +5,28 @@
   min-height: 1060px;
   margin-left: 10px;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
+  padding-right: 20px;
   background-color: #eeebeb;
   border: 2px solid black;
   overflow-y: auto;
+}
+
+.student-list-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.student-list-wrapper::-webkit-scrollbar-track {
+  background: #d6d5d5;
+}
+
+.student-list-wrapper::-webkit-scrollbar-thumb {
+  background: #3f3e3e;
+  border-radius: 10px;
+}
+
+.student-list-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #363535;
+  cursor: pointer;
 }
 /*# sourceMappingURL=studentlist.css.map */

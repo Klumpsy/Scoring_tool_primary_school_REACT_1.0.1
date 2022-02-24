@@ -10,11 +10,6 @@
     .slidercontainer { 
         display: flex;
         flex-direction: column;
-        span { 
-            font-size: 12px;
-        }
-        .range-display { 
-            font-size: 16px;
-        }
+        padding-right: 30px;
     }
 }

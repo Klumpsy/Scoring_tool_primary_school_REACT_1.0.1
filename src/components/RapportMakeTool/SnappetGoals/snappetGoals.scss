@@ -1,0 +1,9 @@
+.snappet-goals-wrapper { 
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    .snappet-goals { 
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,40 @@
+.title-container { 
+    display: flex;
+    margin-bottom: 10px;
+    width: 220px;
+    justify-content: space-between;
+    .add-button { 
+        color: rgb(137, 214, 137);
+        background-color: rgb(105, 99, 99);
+        border-radius: 50%;
+        border: 1px solid rgb(137, 214, 137);
+        &:hover { 
+            cursor: pointer;
+            background-color: black;
+            color: rgb(176, 236, 176);
+            transform: scale(1.08);
+            transition: .4s ease-in-out; 
+        }
+    }
+}
+.project-container { 
+    width: 100%; 
+    margin-bottom: 10px;
+    .project {
+         display: flex;
+         align-items: center;
+         margin-bottom: 5px;
+         input { 
+             padding: 5px;
+             margin-left: 8px;
+             width: 300px;
+         }
+         .delete-item { 
+             &:hover { 
+                 color: red;
+                 cursor: pointer;
+                 transition: .2s ease-in-out
+             }
+         }
+    }
+}

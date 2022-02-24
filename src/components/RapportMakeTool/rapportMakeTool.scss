@@ -15,6 +15,20 @@
         border-radius: 10px;
         margin-left: 5px;
         overflow-y: auto;
+        &::-webkit-scrollbar { 
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #d6d5d5;
+          }
+        &::-webkit-scrollbar-thumb {
+            background: rgb(63, 62, 62);
+            border-radius: 10px;
+          }
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgb(54, 53, 53);
+            cursor: pointer;
+          }
     }
     .rapport-name { 
         text-align: center;

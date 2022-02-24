@@ -31,6 +31,24 @@
   overflow-y: auto;
 }
 
+.rapport-info-wrapper .rapport-make-tool-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.rapport-info-wrapper .rapport-make-tool-wrapper::-webkit-scrollbar-track {
+  background: #d6d5d5;
+}
+
+.rapport-info-wrapper .rapport-make-tool-wrapper::-webkit-scrollbar-thumb {
+  background: #3f3e3e;
+  border-radius: 10px;
+}
+
+.rapport-info-wrapper .rapport-make-tool-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #363535;
+  cursor: pointer;
+}
+
 .rapport-info-wrapper .rapport-name {
   text-align: center;
   width: 60%;
