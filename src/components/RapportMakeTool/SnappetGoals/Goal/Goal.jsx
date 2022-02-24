@@ -4,9 +4,9 @@ import "./goal.css"
 function Goal({ goals, totalGoals }) {
     return (
         <div className="goal">
-            <input type="text" value={goals} />
+            <input type="text" defaultValue={goals} />
             <p>/</p>
-            <input type="text" value={totalGoals} />
+            <input type="text" defaultValue={totalGoals} />
         </div>
     )
 }

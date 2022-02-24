@@ -10,7 +10,7 @@ import { useDispatch } from "react-redux";
 import { updateProjects, removeProject } from "../../../../redux/reducers/studentsSlice";
 
 function Item({ title, researchItems, activeStudent }) {
-    const [items, setItems] = useState(null)
+    const [items, setItems] = useState(researchItems)
     const [student, setStudent] = useState(activeStudent)
     const dispatch = useDispatch();
 
@@ -27,9 +27,10 @@ function Item({ title, researchItems, activeStudent }) {
         setStudent(activeStudent)
     }, [researchItems, activeStudent])
 
-    const handleChange = () => {
+    const handleAdd = () => {
         dispatch(updateProjects({
             type: cases[title],
+            action: "new"
         }))
     }
 
@@ -40,6 +41,15 @@ function Item({ title, researchItems, activeStudent }) {
         }))
     }
 
+    const handleChange = (e, ind) => {
+        dispatch(updateProjects({
+            type: cases[title],
+            index: ind,
+            item: e.target.value,
+            action: "update"
+        }))
+    }
+
     return (
         <div>
             <div className="title-container">
@@ -47,7 +57,7 @@ function Item({ title, researchItems, activeStudent }) {
                 <RiFileAddLine
                     size={25}
                     className="add-button"
-                    onClick={handleChange}
+                    onClick={handleAdd}
                 />
             </div>
             <div className="project-container">
@@ -58,7 +68,10 @@ function Item({ title, researchItems, activeStudent }) {
                             className="project"
                         >
                             <IoMdCheckmarkCircleOutline size={25} />
-                            <input defaultValue={item} />
+                            <input
+                                defaultValue={item}
+                                onChange={(e) => handleChange(e, index)}
+                            />
                             <RiDeleteBinFill
                                 size={25}
                                 className="delete-item"

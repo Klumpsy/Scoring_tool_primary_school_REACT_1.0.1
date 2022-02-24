@@ -57,15 +57,20 @@ const studentSlice = createSlice({
             state.selectedStudent = action.payload
         },
         updateProjects(state, action) { 
-            if (state.selectedStudent[action.payload.type]) { 
-                state.selectedStudent[action.payload.type] = [...state.selectedStudent[action.payload.type], "nieuw veld"];
+            if (state.selectedStudent[action.payload.type]) {
+                if(action.payload.action === "new") { 
+                    state.selectedStudent[action.payload.type] = [...state.selectedStudent[action.payload.type], "nieuw veld"];
+                } 
+                if (action.payload.action === "update") {
+                    state.selectedStudent[action.payload.type][action.payload.index] = [...state.selectedStudent[action.payload.type]][action.payload.index] = action.payload.item
+                }
             } else { 
                 state.selectedStudent[action.payload.type] = ["Nieuwe Veld"];
             }
         },
         removeProject(state, action) { 
             state.selectedStudent[action.payload.type] = [...state.selectedStudent[action.payload.type]].filter(function(value, index, arr) { 
-                return index !== action.payload.index;
+                return index != action.payload.index;
             })
         }
     },
