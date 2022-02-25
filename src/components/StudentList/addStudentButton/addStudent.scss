@@ -1,0 +1,10 @@
+.add-student-button { 
+    background-color: rgb(105, 224, 105);
+    color: white;
+    border-radius: 50%; 
+    &:hover { 
+        cursor: pointer;
+        color: rgb(109, 106, 106); 
+        background-color: rgb(70, 190, 70);
+    }
+}

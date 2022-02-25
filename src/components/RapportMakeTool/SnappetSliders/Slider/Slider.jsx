@@ -3,24 +3,23 @@ import "./slider.css"
 
 import { useDispatch } from "react-redux";
 
-function Slider({ title, lastValue, newValue, sliderDispatch }) {
+function Slider({ title, lastValue, sliderDispatch }) {
     const dispatch = useDispatch()
 
     return (
         <div>
             <h2>{title}</h2>
-            <span>{`Vorige slider waarde: ${lastValue}`}</span>
             <div className="display-container">
                 <input
                     type="range"
                     min="0"
                     max="100"
-                    value={newValue}
+                    value={lastValue ? lastValue : 0}
                     className="slider"
                     id="range-rekenen"
                     onChange={(e) => dispatch(sliderDispatch(e.target.value))}
                 />
-                <span className="range-display">{newValue}</span>
+                <span className="range-display">{lastValue}</span>
             </div>
         </div>
     )

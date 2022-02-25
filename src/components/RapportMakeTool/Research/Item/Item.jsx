@@ -11,7 +11,6 @@ import { updateProjects, removeProject } from "../../../../redux/reducers/studen
 
 function Item({ title, researchItems, activeStudent }) {
     const [items, setItems] = useState(researchItems)
-    const [student, setStudent] = useState(activeStudent)
     const dispatch = useDispatch();
 
     const cases = {
@@ -24,13 +23,13 @@ function Item({ title, researchItems, activeStudent }) {
 
     useEffect(() => {
         setItems(researchItems)
-        setStudent(activeStudent)
     }, [researchItems, activeStudent])
 
     const handleAdd = () => {
+        const item = prompt("Voeg item toe: ")
         dispatch(updateProjects({
             type: cases[title],
-            action: "new"
+            item: item
         }))
     }
 
@@ -38,15 +37,6 @@ function Item({ title, researchItems, activeStudent }) {
         dispatch(removeProject({
             type: cases[title],
             index: ind
-        }))
-    }
-
-    const handleChange = (e, ind) => {
-        dispatch(updateProjects({
-            type: cases[title],
-            index: ind,
-            item: e.target.value,
-            action: "update"
         }))
     }
 
@@ -63,15 +53,9 @@ function Item({ title, researchItems, activeStudent }) {
             <div className="project-container">
                 {
                     items?.map((item, index) => (
-                        <div
-                            key={`${item}added${index}`}
-                            className="project"
-                        >
+                        <div key={`${item}added${index}`} className="project">
                             <IoMdCheckmarkCircleOutline size={25} />
-                            <input
-                                defaultValue={item}
-                                onChange={(e) => handleChange(e, index)}
-                            />
+                            <p className="item-name">{item}</p>
                             <RiDeleteBinFill
                                 size={25}
                                 className="delete-item"

@@ -1,5 +1,6 @@
 .student-list-wrapper {
-  width: 300px;
+  position: relative;
+  width: 320px;
   min-width: 280px;
   max-height: 80vh;
   min-height: 1060px;

@@ -1,0 +1,12 @@
+.add-student-button {
+  background-color: #69e069;
+  color: white;
+  border-radius: 50%;
+}
+
+.add-student-button:hover {
+  cursor: pointer;
+  color: #6d6a6a;
+  background-color: #46be46;
+}
+/*# sourceMappingURL=addStudent.css.map */

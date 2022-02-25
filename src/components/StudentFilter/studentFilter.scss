@@ -4,10 +4,13 @@
     width: 100%;
     padding: 5px; 
     border-radius: 10px;
-
-    input[type=text] { 
-        width: 100%; 
-        padding: 10px;
+    .search-filter-button-container { 
+        display: flex;
+        input[type=text] { 
+            width: 90%; 
+            padding: 10px;
+            margin-right: 5px;
+        }
     }
     .checkbox-filters { 
         width: 100%;

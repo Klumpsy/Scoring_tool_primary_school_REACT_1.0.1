@@ -41,14 +41,14 @@
   margin-bottom: 5px;
 }
 
-.project-container .project input {
+.project-container .project .item-name {
   padding: 5px;
   margin-left: 8px;
-  width: 300px;
+  width: 280px;
 }
 
 .project-container .project .delete-item:hover {
-  color: red;
+  color: #e47878;
   cursor: pointer;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;

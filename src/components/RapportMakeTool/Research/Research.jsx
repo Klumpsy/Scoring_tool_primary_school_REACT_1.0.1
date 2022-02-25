@@ -5,7 +5,6 @@ import "./research.css";
 import Item from './Item/Item';
 
 function Research({ activeStudent }) {
-    console.log(activeStudent)
 
     return (
         <div className="research-wrapper">

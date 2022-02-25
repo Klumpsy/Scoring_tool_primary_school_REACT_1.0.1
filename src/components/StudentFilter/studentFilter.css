@@ -11,9 +11,16 @@
   border-radius: 10px;
 }
 
-.checkbox-filter-wrapper input[type=text] {
-  width: 100%;
+.checkbox-filter-wrapper .search-filter-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkbox-filter-wrapper .search-filter-button-container input[type=text] {
+  width: 90%;
   padding: 10px;
+  margin-right: 5px;
 }
 
 .checkbox-filter-wrapper .checkbox-filters {

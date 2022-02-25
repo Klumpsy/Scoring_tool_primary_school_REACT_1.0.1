@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import "./studentlist.css";
 
 //Components
@@ -35,17 +35,17 @@ function Studentlist() {
             {
                 studentList?.filter(student => {
                     if (searchInput !== "") {
-                        return student.studentName.toLowerCase().includes(searchInput.toLowerCase());
+                        return student?.studentName.toLowerCase().includes(searchInput?.toLowerCase());
                     } else {
                         if (filterCategory === "none") return true
-                        return filterCategory == student.studentGroup
+                        return filterCategory == student?.studentGroup
                     }
-                }).map(student => (
+                }).map((student, index) => (
                     <StudentButton
                         name={student.studentName}
                         group={student.studentGroup}
                         info={student}
-                        key={student.studentName}
+                        key={student.studentName + index}
                     />
                 ))
             }
