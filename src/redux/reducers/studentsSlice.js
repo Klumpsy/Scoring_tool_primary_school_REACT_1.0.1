@@ -18,15 +18,11 @@ export const createStudent = createAsyncThunk('students/createStudent', async ()
         return
     }
 
-    const inputStudent = student ? student : "Forgotten name"
-    const inputGroup = group ? group : "8"
-    const inputTeacher = teacher ? teacher : "Mystery Teacher"
-
     try { 
-        await set(ref(database, "Rapporten/"+ inputStudent), { 
-            studentName: inputStudent,
-            studentGroup: inputGroup,
-            inputTeacher: inputTeacher, 
+        await set(ref(database, "Rapporten/"+ student), { 
+            studentName: student,
+            studentGroup: group,
+            inputTeacher: teacher, 
     
             personalNotes: "",
             personalGoal: "", 
@@ -85,7 +81,7 @@ export const createStudent = createAsyncThunk('students/createStudent', async ()
             nextGroup: ""
         })
     } catch (err) { 
-        console.log(err)
+        alert(`Leerling niet toegevoegd: ${err}`)
     }
 })
 
@@ -156,6 +152,9 @@ const studentSlice = createSlice({
         spellingSlider2(state, action) { 
             state.selectedStudent.sliderDisplay[5] = action.payload
         },
+        updateScores(state, action) { 
+            state.selectedStudent[action.payload.scoreType] = action.payload.newScore
+        },
         updateProjects(state, action) { 
             if (state.selectedStudent[action.payload.type]) {
                 state.selectedStudent[action.payload.type] = [...state.selectedStudent[action.payload.type], action.payload.item]
@@ -212,7 +211,8 @@ export const {
     spellingSlider,
     rekenenSlider2, 
     taalSlider2, 
-    spellingSlider2
+    spellingSlider2,
+    updateScores
 } = studentSlice.actions;
 
 export const checkStudents = state => state.students.students.payload; 
