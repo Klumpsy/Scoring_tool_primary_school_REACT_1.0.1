@@ -1,41 +1,78 @@
-import React from 'react'
-import "./diascores.css"
+import React from 'react';
+import "./diascores.css";
+import Score from "../SnappetScores/Score/Score";
 
 function DiaScores({ activeStudent }) {
     return (
         <div className="dia-scores-wrapper">
             <div className="dia-scores">
                 <h2>Dia</h2>
-                <label htmlFor="dia-rekenen">DIA cijfer</label>
-                <input type="text" defaultValue={activeStudent?.diaRekenen} id="dia-rekenen" />
-                <label htmlFor="dia-rekenen">DIA Tekst</label>
-                <input type="text" defaultValue={activeStudent?.diaTekst} id="dia-tekst" />
-                <label htmlFor="dia-rekenen">DIA Woord</label>
-                <input type="text" defaultValue={activeStudent?.diaWoordenschat} id="dia-woordenschat" />
-                <label htmlFor="dia-rekenen">DIA Spelling</label>
-                <input type="text" defaultValue={activeStudent?.diaSpelling} id="dia-spelling" />
+                <Score
+                    activeStudent={activeStudent}
+                    subject="diaRekenen"
+                    label="Dia cijfer"
+                />
+                <Score
+                    activeStudent={activeStudent}
+                    subject="diaTekst"
+                    label="Dia tekst"
+                />
+                <Score
+                    activeStudent={activeStudent}
+                    subject="diaWoordenschat"
+                    label="Dia woord"
+                />
+                <Score
+                    activeStudent={activeStudent}
+                    subject="diaSpelling"
+                    label="Dia spelling"
+                />
                 <div className="reading-scores">
-                    <label htmlFor="dia-rekenen">AVI</label>
-                    <input type="text" defaultValue={activeStudent?.avi} id="dia-spelling" />
-                    <label htmlFor="dia-rekenen">DMT</label>
-                    <input type="text" defaultValue={activeStudent?.dmt} id="dia-spelling" />
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="avi"
+                        label="AVI"
+                    />
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="dmt"
+                        label="DMT"
+                    />
                 </div>
             </div>
             <div className="dia-scores">
-                <h2>Dia 2</h2>
-                <label htmlFor="dia-rekenen">DIA cijfer</label>
-                <input type="text" defaultValue={activeStudent?.diaRekenen2} id="dia-rekenen" />
-                <label htmlFor="dia-rekenen">DIA Tekst</label>
-                <input type="text" defaultValue={activeStudent?.diaTekst2} id="dia-tekst" />
-                <label htmlFor="dia-rekenen">DIA Woord</label>
-                <input type="text" defaultValue={activeStudent?.diaWoordenschat2} id="dia-woordenschat" />
-                <label htmlFor="dia-rekenen">DIA Spelling</label>
-                <input type="text" defaultValue={activeStudent?.diaSpelling2} id="dia-spelling" />
+                <h2>Dia</h2>
+                <Score
+                    activeStudent={activeStudent}
+                    subject="diaRekenen2"
+                    label="Dia cijfer"
+                />
+                <Score
+                    activeStudent={activeStudent}
+                    subject="diaTekst2"
+                    label="Dia tekst"
+                />
+                <Score
+                    activeStudent={activeStudent}
+                    subject="diaWoordenschat2"
+                    label="Dia woord"
+                />
+                <Score
+                    activeStudent={activeStudent}
+                    subject="diaSpelling2"
+                    label="Dia spelling"
+                />
                 <div className="reading-scores">
-                    <label htmlFor="dia-rekenen">AVI</label>
-                    <input type="text" defaultValue={activeStudent?.avi2} id="dia-spelling" />
-                    <label htmlFor="dia-rekenen">DMT</label>
-                    <input type="text" defaultValue={activeStudent?.dmt2} id="dia-spelling" />
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="avi2"
+                        label="AVI"
+                    />
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="dmt2"
+                        label="DMT"
+                    />
                 </div>
             </div>
         </div>

@@ -97,23 +97,72 @@ export const deleteStudent = createAsyncThunk('students/deleteStudent', async (s
     }
 })
 
-// export const updateStudent = createAsyncThunk('students/updateStudent', async (student) => { 
-//     let deleteCheck = window.confirm("Weet je zeker dat je zeker dat je deze leerling wilt updaten?")
-//     if (deleteCheck == true) { 
-//         try{ 
-//             await update(ref(database, `/Rapporten/${student.studentName}`, {
 
-//             }))
-//             .then(alert(` ${studentName} is geupdate!`))
-//         } catch(err) { 
-//             alert(`Leerling niet geupdate: ${err.message}`)
-//         }
-//     }
-// })
+const emptyStartStudent = { 
+            studentName: "Selecteer leerling",
+            studentGroup: "",
+            inputTeacher: "", 
+    
+            personalNotes: "",
+            personalGoal: "", 
+            personalPearl: "", 
+            personalSocialSkills: "", 
+            personalIndependence: "", 
+            personalWorkEthic: "", 
+    
+            diaRekenen: "", 
+            diaRekenen2: "", 
+            diaTekst: "", 
+            diaTekst2: "",
+            diaSpelling: "", 
+            diaSpelling2: "", 
+            diaWoordenschat: "", 
+            diaWoordenschat2: "", 
+            avi: "", 
+            avi2: "", 
+            dmt: "",
+            dmt2: "",
+    
+            rekenenSnappet: "",
+            rekenenSnappet2: "",  
+            taalSnappet: "", 
+            taalSnappet2: "", 
+            spellingSnappet: "",
+            spellingSnappet2: "", 
+    
+            sliderDisplay: [
+                0, 
+                0,
+                0,
+                0, 
+                0,
+                0
+            ], 
+    
+            behaaldeDoelenRekenen: "",
+            behaaldeDoelenRekenen2: "",  
+            doelenTotaalRekenen: "",
+            doelenTotaalRekenen2: "", 
+    
+            behaaldeDoelenTaal: "", 
+            behaaldeDoelenTaal2: "", 
+            doelenTotaalTaal: "",
+            doelenTotaalTaal2: "", 
+    
+            behaaldeDoelenSpelling: "",
+            behaaldeDoelenSpelling2: "", 
+            doelenTotaalSpelling: "",
+            doelenTotaalSpelling2: "",
+    
+            personalmessage: "",
+            personalmessage2: "",
+    
+            nextGroup: ""
+}
 
 const initialState = { 
     students: [],
-    selectedStudent: null,
+    selectedStudent: emptyStartStudent,
     studentDeleted: null,
     studentAdded: "",
     searchedStudent: "",

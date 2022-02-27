@@ -1,0 +1,16 @@
+.preview-button {
+  background-color: #84b4e0;
+  color: black;
+  border-radius: 25px;
+  margin-right: 20px;
+  padding: 2px;
+}
+
+.preview-button:hover {
+  background-color: #5555e7;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+/*# sourceMappingURL=previewButton.css.map */

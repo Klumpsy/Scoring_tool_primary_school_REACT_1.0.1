@@ -1,0 +1,13 @@
+.save-button { 
+    margin-left: 10px;
+    background-color: rgb(159, 236, 159);
+    border-radius: 50%;
+    color: rgb(8, 8, 8);
+    padding: 2px;
+    &:hover { 
+        background-color: green;
+        color: white; 
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+}

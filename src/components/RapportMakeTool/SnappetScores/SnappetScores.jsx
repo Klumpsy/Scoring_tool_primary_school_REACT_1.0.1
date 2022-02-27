@@ -1,5 +1,6 @@
 import React from 'react'
 import "./snappetScores.css"
+import Score from './Score/Score';
 
 function SnappetScores({ activeStudent }) {
     return (
@@ -7,35 +8,41 @@ function SnappetScores({ activeStudent }) {
             <div className="snappet-scores">
                 <h2>Snappet</h2>
                 <div className="snappet-scores-container">
-                    <div>
-                        <label htmlFor="snappetSpelling">Spelling</label>
-                        <input defaultValue={activeStudent?.spellingSnappet} id="snappetSpelling"></input>
-                    </div>
-                    <div>
-                        <label htmlFor="snappetTaal">Taal</label>
-                        <input defaultValue={activeStudent?.taalSnappet} id="snappetTaal"></input>
-                    </div>
-                    <div>
-                        <label htmlFor="snappetRekenen">Rekenen</label>
-                        <input defaultValue={activeStudent?.rekenenSnappet} id="snappetRekenen"></input>
-                    </div>
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="rekenenSnappet"
+                        label="Rekenen"
+                    />
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="taalSnappet"
+                        label="Taal"
+                    />
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="spellingSnappet"
+                        label="Spelling"
+                    />
                 </div>
             </div>
             <div className="snappet-scores">
                 <h2>Snappet 2</h2>
                 <div className="snappet-scores-container">
-                    <div>
-                        <label htmlFor="snappetSpelling2">Spelling</label>
-                        <input defaultValue={activeStudent?.spellingSnappet2} id="snappetSpelling2" ></input>
-                    </div>
-                    <div>
-                        <label htmlFor="snappetTaal2">Taal</label>
-                        <input defaultValue={activeStudent?.spellingTaal2} id="snappetTaal2"></input>
-                    </div>
-                    <div>
-                        <label htmlFor="snappetRekenen2">Rekenen</label>
-                        <input defaultValue={activeStudent?.spellingRekenen2} id="snappetRekenen2"></input>
-                    </div>
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="rekenenSnappet2"
+                        label="Rekenen"
+                    />
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="taalSnappet2"
+                        label="Taal"
+                    />
+                    <Score
+                        activeStudent={activeStudent}
+                        subject="spellingSnappet2"
+                        label="Spelling"
+                    />
                 </div>
             </div>
         </div>

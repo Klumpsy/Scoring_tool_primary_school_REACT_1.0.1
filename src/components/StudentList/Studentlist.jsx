@@ -11,7 +11,7 @@ import { database } from "../../firebaseFunctions/firebase";
 
 //Redux 
 import { useDispatch, useSelector } from "react-redux";
-import { fetchStudents, checkStudents } from "../../redux/reducers/studentsSlice";
+import { fetchStudents, checkStudents, selectStudent } from "../../redux/reducers/studentsSlice";
 import { selectedCategory, searchedStudent } from "../../redux/reducers/studentsSlice";
 
 const databaseRef = ref(database, "Rapporten");

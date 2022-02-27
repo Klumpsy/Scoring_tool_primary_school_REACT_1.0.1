@@ -35,7 +35,7 @@
   border-radius: 20px;
   -webkit-box-shadow: rgba(95, 126, 104, 0.25) 0px 14px 28px, rgba(149, 233, 168, 0.22) 0px 10px 10px;
           box-shadow: rgba(95, 126, 104, 0.25) 0px 14px 28px, rgba(149, 233, 168, 0.22) 0px 10px 10px;
-  border: 3px solid #71EBA8;
+  border: 3px solid #9cc52c;
 }
 
 .login-page-wrapper .login-container .label-container {
@@ -65,20 +65,20 @@
 }
 
 .login-page-wrapper .login-container .label-container input:focus {
-  outline-color: #71EBA8;
+  outline-color: #9cc52c;
 }
 
 .login-page-wrapper .login-container .label-container button {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  background-color: #71EBA8;
+  background-color: #9cc52c;
   border: none;
   font-size: 20px;
 }
 
 .login-page-wrapper .login-container .label-container button:hover {
   cursor: pointer;
-  background-color: #9fe9c0;
+  background-color: #cce97b;
 }
 /*# sourceMappingURL=loginPage.css.map */

@@ -7,42 +7,42 @@ function SnappetGoals({ activeStudent }) {
         <div className="snappet-goals-wrapper">
             <div className="snappet-goals">
                 <h2>Snappet doelen</h2>
+                <h3>Rekenen</h3>
                 <Goal
-                    goals={activeStudent?.behaaldeDoelenRekenen}
-                    totalGoals={activeStudent?.doelenTotaalRekenen}
+                    student={activeStudent}
                     goalType="behaaldeDoelenRekenen"
                     goalTotalType="doelenTotaalRekenen"
                 />
+                <h3>Taal</h3>
                 <Goal
-                    goals={activeStudent?.behaaldeDoelenTaal}
-                    totalGoals={activeStudent?.doelenTotaalTaal}
+                    student={activeStudent}
                     goalType="behaaldeDoelenTaal"
                     goalTotalType="doelenTotaalTaal"
                 />
+                <h3>Spelling</h3>
                 <Goal
-                    goals={activeStudent?.behaaldeDoelenSpelling}
-                    totalGoals={activeStudent?.doelenTotaalSpelling}
+                    student={activeStudent}
                     goalType="behaaldeDoelenSpelling"
                     goalTotalType="doelenTotaalSpelling"
                 />
             </div>
             <div className="snappet-goals">
                 <h2>Snappet doelen 2</h2>
+                <h3>Rekenen 2</h3>
                 <Goal
-                    goals={activeStudent?.behaaldeDoelenRekenen2}
-                    totalGoals={activeStudent?.doelenTotaalRekenen2}
+                    student={activeStudent}
                     goalType="behaaldeDoelenRekenen2"
                     goalTotalType="doelenTotaalRekenen2"
                 />
+                <h3>Taal 2</h3>
                 <Goal
-                    goals={activeStudent?.behaaldeDoelenTaal2}
-                    totalGoals={activeStudent?.doelenTotaalTaal2}
+                    student={activeStudent}
                     goalType="behaaldeDoelenTaal2"
                     goalTotalType="doelenTotaalTaal2"
                 />
+                <h3>Spelling 2</h3>
                 <Goal
-                    goals={activeStudent?.behaaldeDoelenSpelling2}
-                    totalGoals={activeStudent?.doelenTotaalSpelling2}
+                    student={activeStudent}
                     goalType="behaaldeDoelenSpelling2"
                     goalTotalType="doelenTotaalSpelling2"
                 />

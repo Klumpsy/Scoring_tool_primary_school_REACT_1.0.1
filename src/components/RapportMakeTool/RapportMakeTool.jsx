@@ -8,6 +8,8 @@ import SnappetScores from './SnappetScores/SnappetScores';
 import SnappetSliders from './SnappetSliders/SnappetSliders';
 import SnappetGoals from './SnappetGoals/SnappetGoals';
 import Research from './Research/Research';
+import SaveButton from '../SaveButton/SaveButton';
+import PreviewButton from '../PreviewButton/PreviewButton';
 
 //Redux
 import { useSelector } from "react-redux";
@@ -18,7 +20,11 @@ function RapportMakeTool() {
 
     return (
         <div className="rapport-info-wrapper">
-            <h2 className="rapport-name">{activeStudent?.studentName}</h2>
+            <div className="title-button-container">
+                <PreviewButton />
+                <h2 className="rapport-name">{activeStudent?.studentName}</h2>
+                <SaveButton />
+            </div>
             <div className="rapport-make-tool-wrapper">
                 <PersonalMessages activeStudent={activeStudent} />
                 <DiaScores activeStudent={activeStudent} />

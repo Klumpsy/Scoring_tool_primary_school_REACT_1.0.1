@@ -52,11 +52,24 @@
 .rapport-info-wrapper .rapport-name {
   text-align: center;
   width: 60%;
-  background-color: #9fc29f;
+  background-color: #9cc52c;
   padding-bottom: 20px;
   border-radius: 10px 10px 0px 0px;
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
+}
+
+.rapport-info-wrapper .title-button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=rapportMakeTool.css.map */
