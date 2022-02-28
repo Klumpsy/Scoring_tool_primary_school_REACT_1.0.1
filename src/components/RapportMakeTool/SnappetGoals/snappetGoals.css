@@ -5,6 +5,8 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 30px;
+  background-color: rgba(228, 228, 45, 0.3);
 }
 
 .snappet-goals-wrapper .snappet-goals {
@@ -15,5 +17,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=snappetGoals.css.map */

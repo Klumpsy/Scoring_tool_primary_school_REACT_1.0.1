@@ -5,9 +5,10 @@
     color: rgb(8, 8, 8);
     padding: 2px;
     &:hover { 
-        background-color: green;
+        background-color: rgb(54, 202, 54);
         color: white; 
         cursor: pointer;
-        transition: .2s ease-in-out;
+        transform: scale(1.08);
+        transition: .2s ease-in;
     }
 }

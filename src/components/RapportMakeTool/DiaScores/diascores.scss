@@ -1,7 +1,11 @@
+@import "../../../colors";
+
 .dia-scores-wrapper { 
     display: flex;
     justify-content: space-around;
     width: 100%;
+    background-color: $rapportBackgroundTwo;
+    padding: 10px;
     .dia-scores { 
         display: flex;
         flex-direction: column;

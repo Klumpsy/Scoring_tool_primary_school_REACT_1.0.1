@@ -1,9 +1,13 @@
+@import "../../../colors";
+
 .snappet-scores-wrapper { 
     width: 100%; 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    padding: 10px;
+    padding-bottom: 30px;
+    background-color: $rapportBackgroundOne;
     .snappet-scores { 
         display: flex;
         flex-direction: column;

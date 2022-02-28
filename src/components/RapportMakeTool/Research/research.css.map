@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;CAChB",
+    "mappings": "AAEA,AAAA,iBAAiB,CAAC;EACd,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,gBAAgB,ECAG,uBAAuB;CDC7C",
     "sources": [
-        "research.scss"
+        "research.scss",
+        "../../../_colors.scss"
     ],
     "names": [],
     "file": "research.css"

@@ -7,10 +7,12 @@
 }
 
 .preview-button:hover {
-  background-color: #5555e7;
+  background-color: #2b90f0;
   color: white;
   cursor: pointer;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 /*# sourceMappingURL=previewButton.css.map */

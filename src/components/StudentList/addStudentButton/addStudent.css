@@ -6,7 +6,11 @@
 
 .add-student-button:hover {
   cursor: pointer;
-  color: #6d6a6a;
+  color: #0a0a0a;
   background-color: #46be46;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 /*# sourceMappingURL=addStudent.css.map */

@@ -1,9 +1,15 @@
+@import "../../../colors";
+
 .snappet-goals-wrapper { 
     width: 100%; 
     display: flex;
     justify-content: space-around;
+    padding: 30px;
+    background-color: $rapportBackgroundOne;
     .snappet-goals { 
         display: flex;
         flex-direction: column;
+        margin-left: 20px;
+        align-items: center;
     }
 }

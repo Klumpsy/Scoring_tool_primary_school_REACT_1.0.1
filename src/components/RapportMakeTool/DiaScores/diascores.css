@@ -5,6 +5,8 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  background-color: rgba(60, 178, 251, 0.3);
+  padding: 10px;
 }
 
 .dia-scores-wrapper .dia-scores {

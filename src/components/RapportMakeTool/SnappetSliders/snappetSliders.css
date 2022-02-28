@@ -5,7 +5,8 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(60, 178, 251, 0.3);
 }
 
 .slider-container-wrapper .slider-container-rapporten {
@@ -16,6 +17,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 110px;
 }
 
 .slider-container-wrapper .slidercontainer {

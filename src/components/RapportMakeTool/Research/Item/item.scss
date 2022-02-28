@@ -5,7 +5,8 @@
     justify-content: space-between;
     .add-button { 
         color: rgb(137, 214, 137);
-        background-color: rgb(105, 99, 99);
+        border: 2px solid rgb(137, 214, 137);
+        background-color: rgb(66, 64, 64);
         border-radius: 50%;
         border: 1px solid rgb(137, 214, 137);
         &:hover { 

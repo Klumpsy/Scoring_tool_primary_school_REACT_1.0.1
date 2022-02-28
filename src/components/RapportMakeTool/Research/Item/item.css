@@ -11,7 +11,8 @@
 
 .title-container .add-button {
   color: #89d689;
-  background-color: #696363;
+  border: 2px solid #89d689;
+  background-color: #424040;
   border-radius: 50%;
   border: 1px solid #89d689;
 }

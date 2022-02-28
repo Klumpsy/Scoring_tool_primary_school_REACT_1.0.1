@@ -7,10 +7,12 @@
 }
 
 .save-button:hover {
-  background-color: green;
+  background-color: #36ca36;
   color: white;
   cursor: pointer;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 /*# sourceMappingURL=savebutton.css.map */

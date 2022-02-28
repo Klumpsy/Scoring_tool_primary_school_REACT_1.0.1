@@ -6,6 +6,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  padding: 10px;
+  background-color: rgba(228, 228, 45, 0.3);
 }
 
 .personal-messages-wrapper .personal-messages {
@@ -30,5 +32,11 @@
   min-height: 150px;
   max-height: 150px;
   margin: 5px;
+  padding: 5px;
 }
-/*# sourceMappingURL=PersonalMessages.css.map */
+
+.personal-messages-wrapper .personal-messages textarea:focus {
+  outline: 2px solid #00a2ff;
+  border: 1px solid white;
+}
+/*# sourceMappingURL=personalMessages.css.map */

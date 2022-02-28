@@ -4,7 +4,9 @@
     border-radius: 50%; 
     &:hover { 
         cursor: pointer;
-        color: rgb(109, 106, 106); 
+        color: rgb(10, 10, 10); 
         background-color: rgb(70, 190, 70);
+        transform: scale(1.08);
+        transition: .2s ease-in;
     }
 }

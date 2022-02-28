@@ -1,7 +1,11 @@
+@import "../../../colors";
+
 .personal-messages-wrapper { 
     display: flex;
     justify-content: center;
     width: 100%; 
+    padding: 10px;
+    background-color: $rapportBackgroundOne;
     .personal-messages { 
         display: flex;
         flex-direction: column; 
@@ -13,6 +17,11 @@
             min-height: 150px;
             max-height: 150px; 
             margin: 5px;
+            padding: 5px;
+            &:focus { 
+                outline: 2px solid rgb(0, 162, 255);
+                border: 1px solid white;
+            }
         }
     }
 }

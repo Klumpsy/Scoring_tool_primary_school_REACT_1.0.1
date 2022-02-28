@@ -27,10 +27,14 @@ function Item({ title, researchItems, activeStudent }) {
 
     const handleAdd = () => {
         const item = prompt("Voeg item toe: ")
-        dispatch(updateProjects({
-            type: cases[title],
-            item: item
-        }))
+        if (item) {
+            dispatch(updateProjects({
+                type: cases[title],
+                item: item
+            }))
+        } else {
+            return
+        }
     }
 
     const handleDelete = (ind) => {
