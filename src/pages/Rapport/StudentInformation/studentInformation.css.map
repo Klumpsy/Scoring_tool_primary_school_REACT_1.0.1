@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,8BAA8B,CAAC;EAC3B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,eAAe;EAC9B,MAAM,EAAE,KAAK;EACb,SAAS,EAAE,IAAI;CASlB;;AAfD,AAOI,8BAP0B,CAO1B,EAAE,CAAC;EACC,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACtB;;AAVL,AAWI,8BAX0B,CAW1B,MAAM,CAAC;EACH,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "studentInformation.scss"
+    ],
+    "names": [],
+    "file": "studentInformation.css"
+}

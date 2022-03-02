@@ -1,0 +1,21 @@
+.text-area-container { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .text-area { 
+        width: 45%; 
+        height: 300px;
+        padding: 15px;
+        border: 1px solid black;
+    }
+}
+
+h2 { 
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 { 
+    margin-left: 32px;
+    margin-top: 20px;
+}

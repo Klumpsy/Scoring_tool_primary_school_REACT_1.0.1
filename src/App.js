@@ -1,7 +1,12 @@
 import './App.css';
 
+//React router
+import {BrowserRouter, Routes, Route } from 'react-router-dom'; 
+
+//Components
 import Login from './pages/LoginPage/LoginPage';
 import MainDashboard from "./pages/MainDashboard/MainDashboard"
+import Rapport from './pages/Rapport/Rapport';
 import Navbar from './pages/Navbar/Navbar';
 
 //Redux
@@ -12,17 +17,23 @@ function App() {
   const teacher = useSelector(loggedTeacher); 
 
   return (
-    <div className="app">
-        {
-          teacher ?
-          <>
-           <Navbar/>
-           <MainDashboard/>
-          </>
-          :
-          <Login/>
-        }
-    </div>
+    <BrowserRouter>
+     
+        <div className="app">
+          {
+            teacher ?
+            <>
+            <Navbar/>
+            <Routes>
+              <Route path = "/" element = {<MainDashboard/>}/>
+              <Route path = "Rapport" element = {<Rapport/>}/>
+            </Routes>
+            </>
+            :
+            <Login/>
+          }
+        </div>
+    </BrowserRouter>
   );
 }
 

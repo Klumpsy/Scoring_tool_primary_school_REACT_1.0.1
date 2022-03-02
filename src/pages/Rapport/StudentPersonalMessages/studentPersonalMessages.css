@@ -1,0 +1,28 @@
+.text-area-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-area-container .text-area {
+  width: 45%;
+  height: 300px;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-left: 32px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=studentPersonalMessages.css.map */

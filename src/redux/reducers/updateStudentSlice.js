@@ -5,7 +5,6 @@ import { ref, set} from "firebase/database";
 import { database} from "../../firebaseFunctions/firebase";
 
 export const updateStudent = createAsyncThunk('students/updateStudent', async (student) => { 
-    console.log(student)
     let deleteCheck = window.confirm("Weet je zeker dat je zeker dat je deze leerling wilt updaten?")
     if (deleteCheck == true) { 
         try{ 

@@ -1,0 +1,16 @@
+.student-information-container { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    height: 100px;
+    font-size: 16px;
+    h3 { 
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .image { 
+        width: 120px; 
+        height: 100px; 
+    }
+}

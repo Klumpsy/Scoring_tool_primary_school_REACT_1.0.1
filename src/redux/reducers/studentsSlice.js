@@ -202,11 +202,15 @@ const studentSlice = createSlice({
             state.selectedStudent.sliderDisplay[5] = action.payload
         },
         updateScores(state, action) { 
-            state.selectedStudent[action.payload.scoreType] = action.payload.newScore
+            if(state.selectedStudent[action.payload.scoreType]) { 
+                state.selectedStudent[action.payload.scoreType] = action.payload.newScore
+            } else { 
+                state.selectedStudent = {...state.selectedStudent, [action.payload.scoreType]: [action.payload.newScore]}
+            }
         },
         updateProjects(state, action) { 
             if (state.selectedStudent[action.payload.type]) {
-                state.selectedStudent[action.payload.type] = [...state.selectedStudent[action.payload.type], action.payload.item]
+                state.selectedStudent[action.payload.type] = [...state.selectedStudent, [action.payload.type], action.payload.item]
             } else { 
                 state.selectedStudent[action.payload.type] = [action.payload.item];
             }

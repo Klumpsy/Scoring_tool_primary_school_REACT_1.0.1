@@ -1,0 +1,47 @@
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button-container a {
+  border-radius: 50%;
+}
+
+.button-container a .back-button {
+  text-decoration: none;
+  color: black;
+  background-color: #9cc52c;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.button-container a .back-button:hover {
+  background-color: #cce97b;
+}
+
+.button-container .download-button {
+  color: black;
+  background-color: #9cc52c;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.button-container .download-button:hover {
+  background-color: #cce97b;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+.rapport {
+  overflow-y: scroll;
+}
+/*# sourceMappingURL=rapport.css.map */
