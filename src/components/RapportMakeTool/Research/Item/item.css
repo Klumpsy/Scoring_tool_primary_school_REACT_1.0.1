@@ -7,6 +7,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .title-container .add-button {
@@ -15,6 +18,7 @@
   background-color: #424040;
   border-radius: 50%;
   border: 1px solid #89d689;
+  margin-top: 20px;
 }
 
 .title-container .add-button:hover {

@@ -1,17 +1,33 @@
-.button-container {
+.rapport-container {
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.rapport-container .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.button-container a {
+.rapport-container .button-container a {
   border-radius: 50%;
 }
 
-.button-container a .back-button {
+.rapport-container .button-container a .back-button {
   text-decoration: none;
   color: black;
   background-color: #9cc52c;
@@ -20,11 +36,11 @@
   border-radius: 50%;
 }
 
-.button-container a .back-button:hover {
+.rapport-container .button-container a .back-button:hover {
   background-color: #cce97b;
 }
 
-.button-container .download-button {
+.rapport-container .button-container .download-button {
   color: black;
   background-color: #9cc52c;
   margin: 10px;
@@ -32,16 +48,17 @@
   border-radius: 50%;
 }
 
-.button-container .download-button:hover {
+.rapport-container .button-container .download-button:hover {
   background-color: #cce97b;
   cursor: pointer;
 }
 
-h1 {
+.rapport-container h1 {
   text-align: center;
 }
 
-.rapport {
+.rapport-container .rapport {
   overflow-y: scroll;
+  max-width: 1400px;
 }
 /*# sourceMappingURL=rapport.css.map */

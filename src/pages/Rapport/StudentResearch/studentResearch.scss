@@ -1,0 +1,21 @@
+@import "../../../colors"; 
+
+.research-items {
+    h2 { 
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    li { 
+    display: flex;
+    align-items: center;
+    height: 30px;
+    .checkmark-icon { 
+        color: $mainGreenColor; 
+        margin-right: 10px;
+        margin-left: 30px;
+        width: 25px;
+        height: 25px;
+        }
+    }
+}
+

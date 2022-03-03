@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AACI,eADW,CACX,EAAE,CAAC;EACC,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;CACnB;;AAJL,AAKI,eALW,CAKX,EAAE,CAAC;EACH,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,IAAI;CAQX;;AAhBL,AASI,eATW,CAKX,EAAE,CAIF,eAAe,CAAC;EACZ,KAAK,ECZI,OAAO;EDahB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACX",
+    "sources": [
+        "studentResearch.scss",
+        "../../../_colors.scss"
+    ],
+    "names": [],
+    "file": "studentResearch.css"
+}

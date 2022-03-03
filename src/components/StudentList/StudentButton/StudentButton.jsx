@@ -20,7 +20,11 @@ function StudentButton({ name, group, info }) {
             onClick={() => { dispatch(selectStudent(info)) }}
         >
             <div className="student-name-container">
-                <FaUserGraduate size={20} style={activeStudent?.studentName == name ? { color: "white" } : { color: "black" }} />
+                <FaUserGraduate
+                    size={20}
+                    style={activeStudent?.studentName == name ? { color: "white" } : { color: "black" }}
+                    className="student-icon"
+                />
                 <h3>{name}</h3>
             </div>
             <span className="student-group">

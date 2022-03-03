@@ -1,40 +1,51 @@
 @import "../../colors";
 
-.button-container { 
+.rapport-container { 
+    max-width: 1400px;
     display: flex;
-    justify-content: space-between;
-    a { 
-        border-radius: 50%;
-        .back-button { 
-            text-decoration: none;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    .button-container { 
+        display: flex;
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+        a { 
+            border-radius: 50%;
+            .back-button { 
+                text-decoration: none;
+                color: black;
+                background-color: $mainGreenColor;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 50%;
+                &:hover { 
+                    background-color: $mainGreenHoverColor;
+                }
+            }
+        }
+        .download-button { 
             color: black;
             background-color: $mainGreenColor;
             margin: 10px;
             padding: 5px;
-            border-radius: 50%;
+            border-radius: 50%; 
             &:hover { 
-                background-color: $mainGreenHoverColor;
-            }
+                    background-color: $mainGreenHoverColor;
+                    cursor: pointer;
+                }
         }
     }
-    .download-button { 
-        color: black;
-        background-color: $mainGreenColor;
-        margin: 10px;
-        padding: 5px;
-        border-radius: 50%; 
-        &:hover { 
-                background-color: $mainGreenHoverColor;
-                cursor: pointer;
-            }
+    
+    h1 { 
+        text-align: center;
+    }
+    
+    .rapport { 
+        overflow-y: scroll;
+        max-width: 1400px;
     }
 }
 
-h1 { 
-    text-align: center;
-}
-
-.rapport { 
-    overflow-y: scroll;
-}
 

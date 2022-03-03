@@ -57,7 +57,7 @@
   background-color: #0eade0;
 }
 
-.k-pdf-export .snappet-scores {
+.snappet-scores {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,12 +72,12 @@
   margin-top: 20px;
 }
 
-.k-pdf-export .snappet-scores table {
+.snappet-scores table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin: 10px 40px;
+  width: 90%;
+  margin-top: 0px auto;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -87,14 +87,13 @@
           flex-direction: column;
 }
 
-.k-pdf-export .snappet-scores table td {
+.snappet-scores table td {
   width: 400px;
-  margin-top: 5px;
   padding: 10px;
   text-align: center;
 }
 
-.k-pdf-export .snappet-scores table td .slider-line {
+.snappet-scores table td .slider-line {
   margin: 15px auto;
   position: relative;
   width: 200px;
@@ -102,15 +101,24 @@
   border-bottom: 2px solid black;
 }
 
-.k-pdf-export .snappet-scores table td .slider-line .slider-knob {
+.snappet-scores table td .slider-line .slider-knob {
   position: absolute;
+  width: 6px;
+  height: 18px;
   top: -13px;
-  left: -8px;
-  color: #9cc52c;
+  left: -6px;
+  background-color: #9cc52c;
 }
 
-.k-pdf-export .snappet-scores table th {
-  width: 400px;
+.snappet-scores table td .slider-line .slider-knob .slider-value {
+  position: absolute;
+  left: -24px;
+  color: black;
+  font-size: 10px;
+}
+
+.snappet-scores table th {
+  min-width: 250px;
   text-align: center;
   padding: 20px;
   background-color: #0eade0;

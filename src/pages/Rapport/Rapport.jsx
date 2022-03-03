@@ -22,6 +22,8 @@ import StudentPersonalMessagesPartTwo from './StudentPersonalMessages/StudentPer
 import StudentSnappet from "./StudentSnappet/StudentSnappet";
 import StudentSnappetGoals from "./StudentSnappet/StudentSnappetGoals";
 import StudentDia from './StudentSnappet/StudentDia';
+import StudentResearch from './StudentResearch/StudentResearch';
+import StudentAutograph from './StudentAuthgraph/StudentAutograph';
 
 function Rapport() {
     const student = useSelector(selectedStudent)
@@ -31,8 +33,10 @@ function Rapport() {
         pdfExportComponent.current.save();
     }
 
+    const date = new Date();
+
     return (
-        <div>
+        <div className="rapport-container">
             <div className="button-container">
                 <Link to="/">
                     <BiArrowBack
@@ -53,6 +57,7 @@ function Rapport() {
                 paperSize="A4"
                 scale={0.6}
                 forcePageBreak=".page-break"
+                fileName={`${student.studentName}_${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`}
             >
                 <StudentInformation student={student} />
                 <StudentPersonalMessagesPartOne student={student} />
@@ -60,6 +65,12 @@ function Rapport() {
                 <StudentSnappet student={student} />
                 <StudentSnappetGoals student={student} />
                 <StudentDia student={student} />
+                {student.studentGroup == 3 || student.studentGroup == 4 ?
+                    ""
+                    :
+                    <StudentResearch student={student} />
+                }
+                <StudentAutograph student={student} />
             </PDFExport>
         </div>
     )

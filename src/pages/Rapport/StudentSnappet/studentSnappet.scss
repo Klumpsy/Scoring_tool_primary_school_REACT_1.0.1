@@ -40,7 +40,6 @@
     }
 }
 
-.k-pdf-export { 
     .snappet-scores { 
         display: flex;
         flex-direction: column;
@@ -49,13 +48,12 @@
         margin-top: 20px;
         table {
             display: flex;
-            width: 100%;
-            margin: 10px 40px;
+            width: 90%;
+            margin-top: 0px auto;
             justify-content: space-evenly;
             flex-direction: column;
             td { 
                 width: 400px;
-                margin-top: 5px;
                 padding: 10px;
                 text-align: center;
                 .slider-line { 
@@ -66,18 +64,25 @@
                     border-bottom: 2px solid black;
                     .slider-knob { 
                         position: absolute; 
+                        width: 6px;
+                        height: 18px;
                         top: -13px;
-                        left: -8px;
-                        color: $mainGreenColor
+                        left: -6px;
+                        background-color: $mainGreenColor;
+                        .slider-value { 
+                            position: absolute; 
+                            left: -24px;
+                            color: black;
+                            font-size: 10px;
+                        }
                     }
                 }
             }
             th { 
-                width: 400px;
+                min-width: 250px;
                 text-align: center;
                 padding: 20px;
                 background-color: $mainBlueColor; 
             }
         }
     }
-}

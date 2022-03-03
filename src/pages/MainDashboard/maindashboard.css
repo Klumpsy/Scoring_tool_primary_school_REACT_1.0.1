@@ -6,7 +6,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 100px);
   height: 100%;
   background-image: url("../../media/images/mainDashBottom.svg");
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 }
 
 .dashboard-main-wrapper .rapport-main-info {
-  margin-top: 20px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

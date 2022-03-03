@@ -1,0 +1,52 @@
+.end-page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.end-page-wrapper .autograph-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.end-page-wrapper .autograph-container .autograph {
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.end-page-wrapper .autograph-container h3 {
+  margin-left: 0;
+}
+
+.end-page-wrapper .next-group-wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.end-page-wrapper .next-group-wrapper .next-group {
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=studentAutograph.css.map */

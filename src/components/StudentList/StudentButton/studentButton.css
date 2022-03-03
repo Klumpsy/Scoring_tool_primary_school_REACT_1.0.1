@@ -18,6 +18,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.student-container .student-name-container .student-icon {
+  margin-top: 10px;
 }
 
 .student-container .student-name-container h3 {

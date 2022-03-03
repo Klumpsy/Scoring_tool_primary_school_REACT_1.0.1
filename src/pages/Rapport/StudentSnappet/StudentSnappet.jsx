@@ -1,7 +1,7 @@
 import React from 'react'
 import "./studentSnappet.css"
 
-import { FaMapMarker } from "react-icons/fa";
+import SliderKnob from './SliderKnob/SliderKnob'
 
 function StudentSnappet({ student }) {
     return (
@@ -19,21 +19,13 @@ function StudentSnappet({ student }) {
                         <td>
                             <p>{student.rekenenSnappet}</p>
                             <div className="slider-line">
-                                <FaMapMarker
-                                    size={18}
-                                    className="slider-knob"
-                                    style={{ marginLeft: `${[student.sliderDisplay[0] * 2]}px` }}
-                                />
+                                <SliderKnob student={student} number={0} />
                             </div>
                         </td>
                         <td>
                             <p>{student.rekenenSnappet2}</p>
                             <div className="slider-line">
-                                <FaMapMarker
-                                    size={18}
-                                    className="slider-knob"
-                                    style={{ marginLeft: `${[student.sliderDisplay[1] * 2]}px` }}
-                                />
+                                <SliderKnob student={student} number={1} />
                             </div>
                         </td>
                     </tr>
@@ -42,21 +34,13 @@ function StudentSnappet({ student }) {
                         <td>
                             <p>{student.taalSnappet}</p>
                             <div className="slider-line">
-                                <FaMapMarker
-                                    size={18}
-                                    className="slider-knob"
-                                    style={{ marginLeft: `${[student.sliderDisplay[2] * 2]}px` }}
-                                />
+                                <SliderKnob student={student} number={2} />
                             </div>
                         </td>
                         <td>
                             <p>{student.taalSnappet2}</p>
                             <div className="slider-line">
-                                <FaMapMarker
-                                    size={18}
-                                    className="slider-knob"
-                                    style={{ marginLeft: `${[student.sliderDisplay[3] * 2]}px` }}
-                                />
+                                <SliderKnob student={student} number={3} />
                             </div>
                         </td>
                     </tr>
@@ -65,21 +49,13 @@ function StudentSnappet({ student }) {
                         <td>
                             <p>{student.spellingSnappet}</p>
                             <div className="slider-line">
-                                <FaMapMarker
-                                    size={18}
-                                    className="slider-knob"
-                                    style={{ marginLeft: `${[student.sliderDisplay[4] * 2]}px` }}
-                                />
+                                <SliderKnob student={student} number={4} />
                             </div>
                         </td>
                         <td>
                             <p>{student.spellingSnappet2}</p>
                             <div className="slider-line">
-                                <FaMapMarker
-                                    size={18}
-                                    className="slider-knob"
-                                    style={{ marginLeft: `${[student.sliderDisplay[5] * 2]}px` }}
-                                />
+                                <SliderKnob student={student} number={5} />
                             </div>
                         </td>
                     </tr>
