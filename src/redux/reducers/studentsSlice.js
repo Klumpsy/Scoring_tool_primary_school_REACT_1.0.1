@@ -4,19 +4,15 @@ import { createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 import { ref, remove, update, set} from "firebase/database";
 import { database} from "../../firebaseFunctions/firebase";
 
-export const fetchStudents = createAsyncThunk('students/getStudents', async (data) => { 
+export const fetchStudents = createAsyncThunk('students/getStudents', 
+    async (data) => { 
     return data
 })
 
-export const createStudent = createAsyncThunk('students/createStudent', async () => { 
-    const student = prompt("Leerling naam: ");
-    const group = prompt("Groep: ");
-    const teacher = prompt("Leerkracht: ");
-
-    if(!student || !group || !teacher) { 
-        alert("Je hebt de leerling niet volledig ingevuld.. probeer het opnieuw")
-        return
-    }
+export const createStudent = createAsyncThunk('students/createStudent', 
+    async (data) => { 
+    
+    const {student, group, teacher} = data
 
     try { 
         await set(ref(database, "Rapporten/"+ student), { 

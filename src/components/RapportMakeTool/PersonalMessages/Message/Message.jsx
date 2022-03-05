@@ -9,7 +9,7 @@ function Message({ activeStudent, note, label }) {
             <label
                 htmlFor={note}>{label}</label>
             <textarea
-                value={activeStudent ? activeStudent[note] : ""}
+                value={activeStudent[note] ? activeStudent[note] : ""}
                 id={note}
                 onChange={(e) => dispatch(updateScores({
                     scoreType: note,

@@ -4,17 +4,17 @@ import "./addStudent.css"
 
 //Redux
 import { useDispatch } from "react-redux";
-import { createStudent } from "../../../redux/reducers/studentsSlice";
+import { setModalActive } from "../../../redux/reducers/rapportModalSlice";
 
 function AddStudent() {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     return (
         <>
             <AiOutlineUsergroupAdd
                 size={35}
                 className="add-student-button"
-                onClick={() => dispatch(createStudent())}
+                onClick={() => dispatch(setModalActive())}
             />
         </>
     )
