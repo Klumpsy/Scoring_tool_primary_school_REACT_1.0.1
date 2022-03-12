@@ -5,7 +5,7 @@ import image from "../../../../media/images/checkmark.png";
 function ListItem({ item, title }) {
     return (
         <>
-            {item ?
+            {item && item.length > 0 ?
                 <>
                     <h3>{title}</h3>
                     <ul>
@@ -13,6 +13,7 @@ function ListItem({ item, title }) {
                             <li key={item}>
                                 <img
                                     src={image}
+                                    alt="Checkmark"
                                     className="checkmark-icon"
                                 />
                                 {item}
