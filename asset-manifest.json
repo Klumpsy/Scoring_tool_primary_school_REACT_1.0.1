@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f44f7609.css",
+    "main.js": "/static/js/main.e5335379.js",
+    "static/media/checkmark.png": "/static/media/checkmark.1d1884bb0f19a0ab2691.png",
+    "static/media/logoSprengel.png": "/static/media/logoSprengel.087fb8ab43d58e52833e.png",
+    "index.html": "/index.html",
+    "static/media/loginPageWave.svg": "/static/media/loginPageWave.f91081ab5eb00076b08f.svg",
+    "static/media/mainDashBottom.svg": "/static/media/mainDashBottom.fb5684f0be3177c2c107.svg",
+    "main.f44f7609.css.map": "/static/css/main.f44f7609.css.map",
+    "main.e5335379.js.map": "/static/js/main.e5335379.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f44f7609.css",
+    "static/js/main.e5335379.js"
+  ]
+}
