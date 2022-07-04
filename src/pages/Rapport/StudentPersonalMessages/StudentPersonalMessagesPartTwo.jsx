@@ -28,7 +28,7 @@ function StudentPersonalMessagesPartTwo({ student }) {
                 </div>
             </div>
             <div>
-                <h3>Mijn parel</h3>
+                <h3>Werkhouding</h3>
                 <div className="text-area-container">
                     <div className="text-area">
                         {student.personalWorkEthic}
