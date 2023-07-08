@@ -19,9 +19,9 @@ import { PDFExport, savePDF } from '@progress/kendo-react-pdf';
 import StudentInformation from './StudentInformation/StudentInformation';
 import StudentPersonalMessagesPartOne from './StudentPersonalMessages/StudentPersonalMessagesPartOne';
 import StudentPersonalMessagesPartTwo from './StudentPersonalMessages/StudentPersonalMessagesPartTwo';
-import StudentSnappet from "./StudentSnappet/StudentSnappet";
-import StudentSnappetGoals from "./StudentSnappet/StudentSnappetGoals";
-import StudentDia from './StudentSnappet/StudentDia';
+// import StudentSnappet from "./StudentSnappet/StudentSnappet";
+// import StudentSnappetGoals from "./StudentSnappet/StudentSnappetGoals";
+// import StudentDia from './StudentSnappet/StudentDia';
 import StudentResearch from './StudentResearch/StudentResearch';
 import StudentAutograph from './StudentAuthgraph/StudentAutograph';
 
@@ -62,9 +62,9 @@ function Rapport() {
                 <StudentInformation student={student} />
                 <StudentPersonalMessagesPartOne student={student} />
                 <StudentPersonalMessagesPartTwo student={student} />
-                <StudentSnappet student={student} />
+                {/* <StudentSnappet student={student} />
                 <StudentSnappetGoals student={student} />
-                <StudentDia student={student} />
+                <StudentDia student={student} /> */}
                 {student.studentGroup == 3 || student.studentGroup == 4 ?
                     ""
                     :

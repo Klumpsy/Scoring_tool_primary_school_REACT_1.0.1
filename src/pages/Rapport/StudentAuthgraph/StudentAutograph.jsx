@@ -22,7 +22,7 @@ function StudentAutograph({ student }) {
                 </div>
             </div>
             <div className="next-group-wrapper">
-                <h3>Volgende groep</h3>
+                <h3>Volgend leerjaar</h3>
                 <div className="next-group"></div>
             </div>
         </div>

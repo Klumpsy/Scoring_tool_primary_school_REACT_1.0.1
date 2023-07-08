@@ -22,7 +22,6 @@ function MainDashboard() {
                 <RapportMakeTool />
             </div>
         </div>
-
     )
 }
 
