@@ -12,7 +12,8 @@ import { searchStudent } from "../../redux/reducers/studentsSlice";
 function StudentFilter() {
     const dispatch = useDispatch();
 
-    const filters = [3, 4, 5, 6, 7, 8, "none"]
+    const filters = ['3', '4', '5', '6', '7', '8', "none"]
+    const clusterFilters = ['BijenKorf', 'VlinderTuin', 'UilenNest'];
 
     return (
         <div className="checkbox-filter-wrapper">
@@ -26,6 +27,14 @@ function StudentFilter() {
             </div>
             <div className="checkbox-filters">
                 {filters.map(filter => (
+                    <FilterItem
+                        filterType={filter}
+                        key={`FilterKey${filter}`}
+                    />
+                ))}
+            </div>
+            <div className="checkbox-filters">
+                {clusterFilters.map(filter => (
                     <FilterItem
                         filterType={filter}
                         key={`FilterKey${filter}`}

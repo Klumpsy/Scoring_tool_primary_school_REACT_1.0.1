@@ -23,15 +23,16 @@
     }
     .student-group { 
         position: absolute; 
-        right: 0px;
-        border-radius: 0px 10px 10px 0px;
-        height: 100%;
-        width: 40px;
+        top: 0px;
+        border-radius: 10px 10px 0px 0px;
+        height: 30%;
+        width: 100%;
         display: flex;
+        right: 0px;
         justify-content: center;
         align-items: center;
         background-color: $mainStudentGroupColor;
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 700;
     }
     &:hover { 

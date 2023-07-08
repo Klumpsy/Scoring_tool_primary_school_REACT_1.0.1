@@ -34,12 +34,11 @@ function Studentlist() {
             <StudentFilter />
             {
                 studentList?.filter(student => {
-                    if (searchInput !== "") {
-                        return student?.studentName.toLowerCase().includes(searchInput?.toLowerCase());
-                    } else {
-                        if (filterCategory === "none") return true
-                        return filterCategory == student?.studentGroup
-                    }
+                    let studentGroups = student?.studentGroup.toLowerCase().split(" ").filter(Boolean);
+                    return (
+                        (searchInput !== "" && student?.studentName.toLowerCase().includes(searchInput)) ||
+                        (filterCategory === "none" || studentGroups.some(group => group.includes(filterCategory.toLowerCase())))
+                    );
                 }).map((student, index) => (
                     <StudentButton
                         name={student.studentName}
@@ -52,5 +51,4 @@ function Studentlist() {
         </div>
     )
 }
-
-export default Studentlist
+export default Studentlist;

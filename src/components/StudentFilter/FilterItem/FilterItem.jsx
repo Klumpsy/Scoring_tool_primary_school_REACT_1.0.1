@@ -2,8 +2,7 @@ import React from 'react'
 import "./filterItem.css"
 
 import { useDispatch, useSelector } from "react-redux";
-import { filterStudents } from "../../../redux/reducers/studentsSlice";
-import { selectedCategory } from "../../../redux/reducers/studentsSlice";
+import { filterStudents, selectedCategory } from "../../../redux/reducers/studentsSlice";
 
 function FilterItem({ filterType }) {
     const dispatch = useDispatch();
@@ -11,7 +10,7 @@ function FilterItem({ filterType }) {
 
     return (
         <div
-            className={category == filterType ? "selected-filter filter" : "filter"}
+            className={category === filterType ? "selected-filter filter" : "filter"}
             onClick={() => dispatch(filterStudents(filterType))}
         >
             {filterType}
@@ -19,7 +18,7 @@ function FilterItem({ filterType }) {
     )
 }
 
-export default FilterItem
+export default FilterItem;
 
 
 
